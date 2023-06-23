@@ -290,3 +290,114 @@ a.main-btn:hover::after{
     font-size: 20px;
 }
 /**/
+/**/
+.command{
+    background: url('../img/services-bg.png');
+    background-size: cover;
+}
+.command-inner{
+    padding: 80px 20px;
+}
+.command-title{
+    position: relative;
+    font-weight: 600;
+}
+.command-title::after{
+    content: 'Наша команда';
+    font-size: 50px;
+}
+.comand-item{
+    max-width: 300px;
+}
+.our-command{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    margin-top: 50px;
+}
+.command-item-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.name-item{
+    font-size: 25px;
+    font-weight: 700;
+}
+.command-name{
+    text-align: center;
+}
+.job-position{
+    color: rgba(0,0,0,.7);
+}
+.command-content{
+    position: relative;
+}
+/**/
+.contacts-inner{
+    padding: 80px 20px;    
+}
+.contacts-title::after{
+    content: 'Обратная связь';    
+}
+.contacts-content{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+#map{
+    height: 450px;
+    width: 100%;
+    border-radius: 10px;
+}
+.name{
+    min-width: 400px;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px 0;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: none;
+    border-radius: 5px;
+}
+input.name:focus{
+    border: 1px solid rgba(0,0,0,.4);
+}
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+input.main-btn{
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+ 
+.form-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+.map-content span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.map-content p{
+    margin: 10px 0;
+}
+.form-sub-title{
+    margin: 10px 0;
+}
+.form-content{
+    margin-top: 20px;
+}
+/**/
+.footer{
+    background: #dfdfdf;
+}
+.footer-inner {padding: 50px 20px};
+.footer-content{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}

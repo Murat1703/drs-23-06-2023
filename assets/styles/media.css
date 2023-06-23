@@ -12,4 +12,23 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .main-img{
+        width: 100%;
+    }
+    .our-command{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width:600px){
+    .our-command{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .contacts-content{
+        grid-template-columns: auto;
+    }
+    .name{
+        min-width: 100%;
+    }
 }

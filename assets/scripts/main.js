@@ -7,3 +7,14 @@ window.addEventListener('scroll', function() {
   menuBurger.addEventListener('click',()=>{
     menuBurger.classList.toggle('__active-burger');
   })
+
+  var map;
+
+  DG.then(function () {
+      map = DG.map('map', {
+          center: [43.26153486699917, 76.929221636255],
+          zoom: 16,
+      });
+  
+      DG.marker([43.26153486699917, 76.929221636255]).addTo(map);
+  });
