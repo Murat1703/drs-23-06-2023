@@ -1,0 +1,15 @@
+@media (max-width:768px){
+    .main-menu, .lang-switch{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .services-cards{
+        grid-template-columns: auto;
+    }
+    .company-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
