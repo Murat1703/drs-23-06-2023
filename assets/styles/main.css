@@ -49,6 +49,7 @@ a:hover{
     padding: 20px 0;
 }
 .header-content{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +78,15 @@ a:hover{
 }
 .main-menu li:last-child{
     margin-right: 0;
+}
+.main-menu li a{
+    font-weight: 600;
+    position: relative;
+}
+.main-menu li a:hover:before{
+    position: absolute;
+    left:-8px;
+    content: ' \00B7';
 }
 .menu-burger{
     display: none;
@@ -227,7 +237,6 @@ a.main-btn:hover::after{
     opacity: 1;
     transition: .3s ease all;
 }
-
 .service-card-item-top{
     display: flex;
     align-items: center; 
@@ -237,10 +246,42 @@ a.main-btn:hover::after{
 .card-item-img{
     max-width: 70px;
     display: block;
-    opacity: .75;
+    opacity: .55;
 }
 .service-card-content{
     font-size: 20px;
+}
+.show-more-link{
+    position: relative;
+}
+.show-more-link::after{
+    position: absolute;
+    content:url('../img/right-dark.svg');
+    right: -20px;
+    opacity: .8;
+}
+.show-more-btn{
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+}
+.show-more-btn::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    background: rgb(0, 0, 0);
+    height: 1px;
+    width: 0%;
+}
+.service-card-item:hover .show-more-btn:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    background: rgb(0, 0, 0);
+    height: 1px;
+    transition: .3s ease all;
+    width: 100%;
 }
 /**/
 /**/
@@ -367,9 +408,11 @@ input{
     font-family: 'Montserrat', sans-serif;
 }
 input.main-btn{
+    padding: 10px 20px;
+    color: #232323;
     outline: none;
     font-family: 'Montserrat', sans-serif;
-    border: none;
+    border: 1px solid #2779a7;
     cursor: pointer;
 }
  
@@ -400,4 +443,25 @@ input.main-btn{
     display: inline-block;
     margin: 0 auto;
     text-align: center;
+}
+.chat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2779a7;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.chat-content{
+    position: relative;
+}
+img.chat-img{
+    opacity: .7;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }

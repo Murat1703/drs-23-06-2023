@@ -6,7 +6,8 @@
         display: block;
     }
     .services-cards{
-        grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: 100%;
     }
     .company-content{
         flex-wrap: wrap;
